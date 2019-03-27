@@ -11,9 +11,9 @@ MetaSocialImage: images/typescript-tutorial/Languages_typescript.png
 # TypeScript tutorial in Visual Studio Code Visual Studio Code中的TypeScript教程
 
 
-[ TypeScript ](https://www.typescriptlang.org) is a typed superset of JavaScript that compiles to plain JavaScript. It offers classes, modules, and interfaces to help you build robust components. The TypeScript language specification can be found [here](https://github.com/Microsoft/TypeScript/tree/master/doc).
+[TypeScript](https://www.typescriptlang.org) is a typed superset of JavaScript that compiles to plain JavaScript. It offers classes, modules, and interfaces to help you build robust components. The TypeScript language specification can be found [here](https://github.com/Microsoft/TypeScript/tree/master/doc).
 
-[ TypeScript ](https://www.typescriptlang.org)是一个类型化的 JavaScript 超集，编译为纯 JavaScript 。它提供类、模块和接口来帮助您构建健壮的组件。可以在此处找到 TypeScript 语言规范[here](https://github.com/Microsoft/TypeScript/tree/master/doc)。
+[TypeScript](https://www.typescriptlang.org)是一个类型化的 JavaScript 超集，编译为纯 JavaScript 。它提供类、模块和接口来帮助您构建健壮的组件。可以在此处找到 TypeScript 语言规范[here](https://github.com/Microsoft/TypeScript/tree/master/doc)。
 
 ## Install the TypeScript compiler 安装 TypeScript 编辑器
 
@@ -155,7 +155,7 @@ Delete `helloworld.js`, run `tsc` again and `helloworld.js` will be placed in an
 
 See [Compiling TypeScript](/docs/typescript/typescript-compiling.md) to learn about other features of the TypeScript language service and how to use tasks to run your builds directly from VS Code.
 
-请参阅[编译 TypeScript ](/docs/typescript/typescript-compiling.md)以了解 TypeScript 语言服务的其他功能以及如何使用任务直接从vs Code运行生成。
+请参阅[编译 TypeScript](/docs/typescript/typescript-compiling.md)以了解 TypeScript 语言服务的其他功能以及如何使用任务直接从vs Code运行生成。
 
 ## Error checking 错误检查
 
@@ -214,9 +214,9 @@ In `helloworld.ts`, set a breakpoint by clicking on the left gutter of the edito
 
 ![debug breakpoint](images/tutorial/debug-breakpoint.png)
 
-See [Debugging TypeScript ](/docs/typescript/typescript-debugging.md) to learn more about VS Code's built-in debugging support for TypeScript and how you can configure the debugger for your project scenarios.
+See [Debugging TypeScript](/docs/typescript/typescript-debugging.md) to learn more about VS Code's built-in debugging support for TypeScript and how you can configure the debugger for your project scenarios.
 
-请参阅调试[ TypeScript ](/docs/typescript/typescript-debugging.md) 以了解有关vs code对 TypeScript 的内置调试支持以及如何为项目方案配置调试器的更多信息。
+请参阅调试[TypeScript](/docs/typescript/typescript-debugging.md) 以了解有关vs code对 TypeScript 的内置调试支持以及如何为项目方案配置调试器的更多信息。
 
 ## Next steps 下一步
 
@@ -227,8 +227,8 @@ This tutorial was a quick introduction to using VS Code for TypeScript developme
 * [Compiling TypeScript](/docs/typescript/typescript-compiling.md) - Use VS Code's powerful task system for compiling TypeScript.
 * [Debugging TypeScript](/docs/typescript/typescript-debugging.md) - Configure the debugger for your TypeScript project.
 
-* [编译 TypeScript ](/docs/typescript/typescript-compiling.md)-使用vs code强大的任务系统来编译 TypeScript 。
-* [调试 TypeScript ](/docs/typescript/typescript-debugging.md)-为 TypeScript 项目配置调试器。
+* [编译 TypeScript](/docs/typescript/typescript-compiling.md)-使用vs code强大的任务系统来编译 TypeScript 。
+* [调试 TypeScript](/docs/typescript/typescript-debugging.md)-为 TypeScript 项目配置调试器。
 
 ## Common questions 常见问题
 
