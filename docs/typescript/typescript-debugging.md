@@ -12,7 +12,7 @@ MetaSocialImage: images/typescript-tutorial/Languages_typescript.png
 
 Visual Studio Code supports TypeScript debugging through its built-in [Node.js debugger](/docs/nodejs/nodejs-debugging.md) and also through [extensions](/docs/editor/extension-gallery.md) like [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) to support client-side TypeScript debugging.
 
-Visual Studio Code 支持通过其内置的 [Node.js调试器](/docs/nodejs/nodejs-debugging.md) 进行 TypeScript 调试，也支持通过诸如 [debugger for chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 之类的[扩展](/docs/editor/extension-gallery.md)来支持客户端 TypeScript 调试。
+Visual Studio Code 支持通过其内置的 [Node.js调试器](/docs/nodejs/nodejs-debugging.md) 进行 TypeScript 调试，也支持通过诸如 [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 之类的[插件](/docs/editor/extension-gallery.md)来支持客户端 TypeScript 调试。
 
 ## JavaScript source map support  JavaScript 源映射支持
 
@@ -41,7 +41,7 @@ For a simple example of source maps in action, see the [TypeScript tutorial](/do
 
 For more advanced debugging scenarios, you can create your own debug configuration `launch.json` file. To see the default configuration, go to the Debug view (`kb(workbench.view.debug)`) and press the gear icon to **Configure or Fix 'launch.json'**. If you have other debugger extensions installed (such as the Debugger for Chrome), you should select **Node.js** from the drop down.
 
-对于更高级的调试方案，可以创建自己的调试配置 `launch.json` 文件。要查看默认配置，请转到调试视图 (`kb(workbench.view.debug)`) ，然后按齿轮图标**配置或修复 'launch.json' ** 。如果安装了其他调试器扩展(如用于 Chrome 的调试器)，则应从下拉列表中选择 **Node.js**。
+对于更高级的调试方案，可以创建自己的调试配置 `launch.json` 文件。要查看默认配置，请转到调试视图 (`kb(workbench.view.debug)`) ，然后按齿轮图标**配置或修复 'launch.json' ** 。如果安装了其他调试器插件(如用于 Debugger for Chrome )，则应从下拉列表中选择 **Node.js**。
 
 ![configure launch.json](images/debugging/configure-debugging.png)
 
@@ -72,11 +72,11 @@ This will create a `launch.json` file in a `.vscode` folder with default values 
 
 VS Code has determined the program to launch, `helloworld.ts`, included the build as a `preLaunchTask`, and told the debugger where to find the generated JavaScript files.
 
-VS Code 已经确定了要启动的程序 `helloworld.ts` ，将构建作为一个 `预启动任务` 包括在内，并告诉调试器在哪里可以找到生成的 JavaScript 文件。
+VS Code 已经确定了要启动的 `helloworld.ts` 程序，包括构建一个 `预启动任务` ，并告诉调试器在哪里可以找到生成的 JavaScript 文件。
 
 There is full IntelliSense with suggestions and information for `launch.json` to help you learn about other debug configuration options. You can also add new debug configurations to `launch.json` with the **Add Configuration** button in the lower right.
 
-有完整的智能提示，其中包含 `launch.json` 的建议和信息，以帮助您了解其他调试配置选项。您还可以使用右下角的**添加配置**按钮向 `launch.json` 添加新的调试配置。
+有完整的智能提示，其中包含 `launch.json` 的建议和信息，以帮助了解其他调试配置选项。还可以使用右下角的**添加配置**按钮向 `launch.json` 添加新的调试配置。
 
 ![launch.json IntelliSense](images/debugging/launch-json-intellisense.png)
 
@@ -88,13 +88,13 @@ Also see [Node.js Debugging](/docs/nodejs/nodejs-debugging.md) for examples and 
 
 If generated (transpiled) JavaScript files do not live next to their source, you can help the VS Code debugger locate them by setting the `outFiles` attribute in the launch configuration. Whenever you set a breakpoint in the original source, VS Code tries to find the generated source by searching the files specified by glob patterns in `outFiles`.
 
-如果生成的(发出来的) JavaScript 文件不在它们的源代码旁边，您可以通过在启动配置中设置 `outFiles` 属性来帮助 VS Code 调试器定位它们。每当在原始源中设置断点时，VS Code 都会通过搜索由 `outFiles` 中的 glob 模式指定的文件来尝试查找生成的源。
+如果生成的(发出来的) JavaScript 文件不在它们的源代码旁边，可以通过在启动配置中设置 `outFiles` 属性来帮助 VS Code 调试器定位它们。每当在原始源中设置断点时，VS Code 都会通过搜索由 `outFiles` 中的 glob 模式指定的文件来尝试查找生成的源。
 
 ## Client-side debugging  客户端调试
 
 TypeScript is great for writing client-side code as well as Node.js applications and you can debug client-side source code with extensions such as [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome).
 
-TypeScript 非常适合于编写客户端代码以及 Node.js 应用程序，您可以使用诸如 [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 之类的扩展来调试客户端源代码。
+TypeScript 非常适合于编写客户端代码以及 Node.js 应用程序，可以使用诸如 [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 之类的插件来调试客户端源代码。
 
 We'll create a tiny web application to show client-side debugging in action.
 
@@ -138,17 +138,17 @@ tsconfig.json
 
 Run `tsc` to build the app and then test by opening `helloweb.html` in your browser (you can right click `helloweb.html` in the File Explorer and select **Copy Path** to paste into your browser).
 
-运行 `tsc` 构建应用程序，然后通过在浏览器中打开 `helloweb.html` 进行测试(您可以在文件资源管理器中右键单击 `helloweb.html` ，然后选择**复制**路径粘贴到浏览器中)。
+运行 `tsc` 构建应用程序，然后通过在浏览器中打开 `helloweb.html` 进行测试(可以在文件资源管理器中右键单击 `helloweb.html` ，然后选择**复制**路径粘贴到浏览器中)。
 
 To debug the client-side code, install the [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) [extension](/docs/editor/extension-gallery.md). Open the Extensions view (`kb(workbench.view.extensions)`) and search for "Chrome". Install the extension and reload VS Code.
 
-要调试客户端代码，请安装用于 [扩展](/docs/editor/extension-gallery.md) 的 [chrome 调试器](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 。打开扩展视图 (`kb(workbench.view.extensions)`) 并搜索 "Chrome" 。安装扩展并重新加载 VS Code 。
+要调试客户端代码，请安装用于 [插件](/docs/editor/extension-gallery.md) 的 [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 。打开插件视图 (`kb(workbench.view.extensions)`) 并搜索 "Chrome" 。安装插件并重新加载 VS Code 。
 
 ![debugger for chrome extension](images/debugging/debugger-for-chrome.png)
 
 In the Debug view, press the gear icon to create a `launch.json` file selecting **Chrome** as the debugger.
 
-在 Debug 视图中，按 Gear 图标创建 `launch.json` 文件，选择 **chrome** 作为调试器。
+在 Debug 视图中，Gear 点击齿轮标志按钮创建一个 `launch.json` 文件，选择 **chrome** 作为调试器。
 
 Update the `launch.json` to specify the local file URL to `helloweb.html`:
 
