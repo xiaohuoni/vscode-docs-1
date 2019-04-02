@@ -5,45 +5,71 @@ PageTitle: Visual Studio Code Frequently Asked Questions
 DateApproved: 3/7/2019
 MetaDescription: Visual Studio Code Frequently Asked Questions
 ---
-# Visual Studio Code FAQ
+# Visual Studio Code FAQ  Visual Studio Code 常见问题解答
 
 Our docs contain a **Common questions** section as needed for specific topics. We've captured items here that don't fit in the other topics.
 
+我们的文档包含一个**常见问题**部分，用于特定主题。我们在这里注意到了不适合其他主题的项目。
+
 If you don't see an answer to your question here, check our previously [reported issues](https://github.com/microsoft/vscode/issues) and our [Updates](/updates) notes.
 
-## What is the difference between VS Code and VS Community?
+如果你在这里看不到问题的答案，请查看我们以前报告的[问题](https://github.com/microsoft/vscode/issues) 和[更新](/updates)说明。
+
+## What is the difference between VS Code and VS Community? VS Code 和 VS Community 有什么区别?
 
 Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs.
 
-## Which OS's are supported?
+Visual Studio Code 是一个简化的代码编辑器，支持调试、任务运行和版本控制等开发操作。它旨在为开发人员提供快速代码构建调试周期所需的工具，并将更复杂的工作流留给功能更丰富的 IDE。
+
+## Which OS's are supported? 支持哪些操作系统?
 
 VS Code runs on macOS, Linux, and Windows. See [Requirements](requirements) for the supported versions. You can find more platform specific details under [SETUP](/docs/setup/setup-overview.md).
 
-## Is VS Code free?
+VS Code 运行在 MacOS、Linux 和 Windows 上。请参阅支持版本的[要求](requirements)。你可以在 [SETUP](/docs/setup/setup-overview.md) 下找到更多特定于平台的详细信息。
+
+## Is VS Code free? VS Code 使免费的吗？
 
 Yes, VS Code is [free for private or commercial use](https://code.visualstudio.com/license).
 
-## Report an issue with a VS Code extension
+是的，VS Code 可供[私人或商业使用](https://code.visualstudio.com/license)。
+
+## Report an issue with a VS Code extension 报告带有 VS Code 扩展的问题
 
 For bugs, feature requests or to contact an extension author, you should use the links available in the Visual Studio Code [Marketplace](https://marketplace.visualstudio.com/vscode) or use **Help: Report Issue** from the Command Palette. However, if there is an issue where an extension does not follow our code of conduct, for example it includes profanity, pornography or presents a risk to the user, then we have an email alias where you can [contact us to report the issue](mailto:VSMarketplace@microsoft.com). Once the mail is received, our Marketplace team will look into an appropriate course of action, up to and including unpublishing the extension.
 
-## How do I find the VS Code version?
+对于错误、功能请求或与扩展作者联系，应使用 Visual Studio Code [市场](https://marketplace.visualstudio.com/vscode)中提供的链接，或使用命令调色板中的**帮助：报告问题**。但是，如果存在扩展不遵守我们的行为准则的问题，例如它包括亵渎、色情或对用户造成风险，那么我们有一个电子邮件别名，你可以在其中[联系我们报告该问题](mailto:VSMarketplace@microsoft.com)。一旦收到邮件，我们的市场团队将调查适当的行动过程，包括取消发布扩展。
+
+## How do I find the VS Code version? 如何找到 VS Code 版本?
 
 You can find the VS Code version information in the About dialog box.
 
+你可以在 "About" 对话框中找到 VS Code 版本信息。
+
 On macOS, go to **Code** > **About Visual Studio Code**.
+
+在 macOS，进入 **Code** > **About Visual Studio Code**。
 
 On Windows and Linux, go to **Help** > **About**.
 
+在 Windows 和 Linux，进入 **Help** > **About**。
+
 The VS Code version is the first **Version** number listed and has the version format 'major.minor.release', for example '1.27.0'.
 
-## How do I opt out of VS Code auto-updates?
+VS Code 版本是列出的第一个**版本**号，版本格式为 'major.minor.release'，例如 '1.27.0'。
+
+## How do I opt out of VS Code auto-updates? 如何选择退出 VS Code 自动更新？
 
 By default, VS Code is set up to auto-update for macOS and Windows users when we release new updates. If you do not want to get automatic updates, you can set the **Update: Mode** setting from `default` to `none`.
 
+默认情况下，当我们发布新的更新时，VS Code 会为用户设置为 MacOS 和 Windows 自动更新。如果不想获得自动更新，可以将 **Update: Mode** 设置从 `default` 设置为 `none`。
+
 To modify the update mode, go to **File** > **Preferences** > **Settings** (macOS: **Code** > **Preferences** > **Settings**), search for `update mode` and change the setting to `none`.
 
+修改更新模式，路径为 **File** > **Preferences** > **Settings** (macOS: **Code** > **Preferences** > **Settings**)，搜索 `update mode`并将设置更改为 `none`。
+
 If you use the JSON editor for your settings, add the following line:
+
+如果使用 JSON 编辑器进行设置，请添加以下行：
 
 ```json
     "update.mode": "none"
@@ -51,31 +77,47 @@ If you use the JSON editor for your settings, add the following line:
 
 You can install a previous release of VS Code by uninstalling your current version and then installing the download provided at the top of a specific release page under [Updates](/updates).
 
+你可以通过卸载当前版本，然后安装[更新](/updates)下特定版本页面顶部提供的下载来安装先前版本的 VS Code 。
+
 >**Note:** On Linux: If the VS Code repository was installed correctly then your system package manager should handle auto-updating in the same way as other packages on the system. See [Installing VS Code on Linux](/docs/setup/linux.md#updates).
 
-## Can I run a portable version of VS Code?
+>**Note:** On Linux:如果正确安装了 VS Code 存储库，则系统包管理器应以与系统上其他包相同的方式处理自动更新。查看[在 Linux 上安装 VS Code](/docs/setup/linux.md#updates)。
+
+## Can I run a portable version of VS Code? 我能运行 VS Code 的便携式版本吗
 
 Yes, VS Code has a [Portable Mode](/docs/editor/portable.md) which lets you keep settings and data in the same location as your installation, for example, on a USB drive.
 
-## Licensing
+是的，VS Code 有一个[便携模式](/docs/editor/portable.md)，允许你将设置和数据保存在与安装相同的位置，例如，在USB驱动器上。
 
-### Location
+## Licensing 许可
+
+### Location 位置
 
 You can find the VS Code licenses, third party notices and [Chromium](https://www.chromium.org) Open Source credit list under your VS Code installation location `resources\app` folder. VS Code's `ThirdPartyNotices.txt`, Chromium's `Credits_*.html`, and VS Code's English language `LICENSE.txt` are available under `resources\app`. Localized versions of `LICENSE.txt` by Language ID are under `resources\app\licenses`.
 
-### Why does Visual Studio Code have a different license than the vscode GitHub repository?
+你可以在 VS Code 安装本地 `resources\app` 文件夹下找到 VS Code 许可证、第三方通知和 [chromium](https://www.chromium.org) 开源信用列表。VS Code 的 `ThirdPartyNotices.txt`、Chromium 的 `Credits_*.html` 和 VS Code 的英语 `LICENSE.txt` 可在 `resources\app` 下找到。语言ID 的 `LICENSE.txt` 本地化版本位于 `resources\app\licenses` 下。
+
+### Why does Visual Studio Code have a different license than the vscode GitHub repository? 为什么 Visual Studio Code 具有与 vscode GitHub存储库不同的许可证？
 
 To learn why Visual Studio Code, the product, has a different license than vscode, the open source [GitHub repository](https://github.com/microsoft/vscode), see [issue #60](https://github.com/Microsoft/vscode/issues/60#issuecomment-161792005) for a detailed explanation.
 
-## Can I run prerelease versions of VS Code?
+要了解产品 Visual Studio Code 与开源 [Github 存储库](https://github.com/microsoft/vscode) vscode 具有不同许可证的原因，请参阅[第60版](https://github.com/Microsoft/vscode/issues/60#issuecomment-161792005)以获取详细说明。
+
+## Can I run prerelease versions of VS Code? 我能运行 VS Code 的预发布版本吗?
 
 Want an early peek at new VS Code features?  You can try prerelease versions of VS Code by installing the "Insiders" build.  The Insiders build installs side by side to your stable VS Code install and has isolated settings, configurations and extensions.  The Insiders build is updated nightly so you'll get the latest bug fixes and feature updates from the day before.
 
+想早点了解新的 VS Code 特性吗？你可以通过安装 "insiders" 编译来尝试预发布版本的 VS Code。内部人员构建与稳定的vs代码并排安装，并具有独立的设置、配置和扩展。内部人员构建是每晚更新的，因此你可以从前一天获得最新的 bug 修复和功能更新。
+
 To install the Insiders build, go to the Insiders [download page](/insiders).
 
-## VS Code gets unresponsive right after opening a folder
+要安装Insiders Build，请转到 [Insiders下载页](/insiders)。
+
+## VS Code gets unresponsive right after opening a folder 打开文件夹后，VS Code 将立即停止响应
 
 When you open a folder, VS Code will search for typical project files to offer you additional tooling (e.g. the solution picker in the status bar to open a solution). If you open a folder with lots of files, the search can take a large amount of time and CPU resources during which VS Code might be slow to respond. We plan to improve this in the future but for now you can exclude folders from the explorer via the `files.exclude` setting and they will not be searched for project files:
+
+当你打开文件夹，VS Code 会搜索典型项目文件提供额外的工具(例如你的解决方案选择在状态栏打开一个解决方案)。如果打开的文件夹中有大量文件，搜索可能会花费大量时间和 CPU 资源，在此期间，VS Code 的响应速度可能会很慢。我们计划在将来对此进行改进，但现在你可以通过 `files.exclude` 设置从资源管理器中排除文件夹，并且不会在其中搜索项目文件：
 
 ```json
     "files.exclude": {
