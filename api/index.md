@@ -15,11 +15,15 @@ Visual Studio Code is built with extensibility in mind. From the UI to the editi
 
 Visual Studio Code 是基于扩展性构建的。从 UI 到编辑体验，几乎 VS Code 的每一部分都可以通过 Extension API 定制或增强。事实上，VS代码的许多核心特性都是作为[extension](https://github.com/Microsoft/vscode/tree/master/extensions) 构建的，并且使用相同的 Extension API。
 
-This documentation describes（这份文档描述了）:
+This documentation describes:
+> 这份文档描述了
 
-- How to build, run, debug, test and publish an extension（如何构建、运行、调试、测试和发布一个 extension）
-- How to take advantage of VS Code's rich Extension API（如何利用 VS Code 丰富的 Extension API）
-- Where to find guides and code samples to help get you started (在哪里可以找到指南和示例代码来帮助您开始)
+- How to build, run, debug, test and publish an extension
+  > 如何构建、运行、调试、测试和发布一个 extension
+- How to take advantage of VS Code's rich Extension API
+  > 如何利用 VS Code 丰富的 Extension API
+- Where to find guides and code samples to help get you started
+  > 在哪里可以找到指南和示例代码来帮助您开始
 
 If you are looking for published extensions, head to the [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode).
 
@@ -28,8 +32,7 @@ If you are looking for published extensions, head to the [VS Code Extension Mark
 ## What can extensions do?（extension 能做什么？）
 
 Here are some examples of what you can achieve with the Extension API:
-
-以下是使用 Extension API 可以实现的一些示例
+> 以下是使用 Extension API 可以实现的一些示例
 
 - Change the look of VS Code with a color or icon theme - [Theming](/api/extension-capabilities/theming)  
   > 用颜色或图标主题更改 VS Code 的外观
@@ -47,11 +50,10 @@ If you'd like to have a more comprehensive overview of the Extension API, refer 
 如果您想更全面地了解 Extension API，请参考 [Extension Capabilities Overview](/api/extension-capabilities/overview) 页面。[Extension Guides Overview](/api/extension-guides/overview) 还包括说明各种 Extension API 用法的代码示例和指南列表。
 
 
-## How to build extensions? 如何构建一个扩展
+## How to build extensions? （如何构建一个扩展）
 
 Building a good extension can take a lot of effort. Here is how each section of the API doc can help you with:  
-
-构建一个良好的扩展需要付出很大的努力，下面这文档也许能够帮助到你：
+> 构建一个良好的扩展需要付出很大的努力，下面这文档也许能够帮助到你：
 
 - **Get Started** teaches fundamental concepts for building extensions with the [Hello World](https://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-sample) sample.
   > **Get Started** 通过 [Hello World](https://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-sample) 样例了解 extension 的基本概念
@@ -71,7 +73,7 @@ Building a good extension can take a lot of effort. Here is how each section of 
 ## Looking for help (寻求帮助）
 
 If you have questions for extension development, try asking on:
-如果您对扩展开发有疑问，请尝试询问:
+> 如果您对扩展开发有疑问，请尝试询问:
 
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio-code): There are [12k questions](https://stackoverflow.com/questions/tagged/visual-studio-code) tagged `visual-studio-code`, and over half of them already have answers. Search for your issue, ask questions, or help your fellow developers by answering VS Code extension development questions!
   > [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio-code)： 这里有  [12k 个问题](https://stackoverflow.com/questions/tagged/visual-studio-code) 被打上了 `visual-studio-code` 的标签，并且超过一半的问题已经有了回答。搜索您的问题，提出问题，或者通过回答 VS Code 扩展的相关开发问题来帮助各位开发者吧！
@@ -79,9 +81,7 @@ If you have questions for extension development, try asking on:
   > [Gitter Channel](https://gitter.im/Microsoft/vscode) 与 [VS Code Dev Slack](https://join.slack.com/t/vscode-dev-community/shared_invite/enQtMjIxOTgxNDE3NzM0LWU5M2ZiZDU1YjBlMzdlZjA2YjBjYzRhYTM5NTgzMTAxMjdiNWU0ZmQzYWI3MWU5N2Q1YjBiYmQ4MzY0NDE1MzY): 面向扩展插件开发者的聊天室，与 VS Code 的团队成员交流
 
 To provide feedback on the documentation, create new issues at [Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/issues).  
-
-为文档提供反馈，在 [Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/issues) 创建新的 issues。
+> 为文档提供反馈，在 [Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/issues) 创建新的 issues。
 
 If you have extension questions that you cannot find an answer for, or issues with VS Code Extension API, please open new issues at [Microsoft/vscode](https://github.com/Microsoft/vscode/issues).  
-
-如果你有一些关于扩展 或 VS Code Extension API 的问题无法找到答案，请在 [Microsoft/vscode](https://github.com/Microsoft/vscode/issues) 下激活 issues
+> 如果你有一些关于扩展 或 VS Code Extension API 的问题无法找到答案，请在 [Microsoft/vscode](https://github.com/Microsoft/vscode/issues) 下激活 issues
