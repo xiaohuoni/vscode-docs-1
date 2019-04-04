@@ -235,11 +235,19 @@ You can inspect telemetry events in the Output panel by setting the log level to
 
 VS Code collects data about any crashes that occur and sends it to Microsoft to help improve our products and services. Read our [privacy statement](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409) to learn more.
 
+VS Code 收集所有发生崩溃的数据，并将其发送给 Microsoft，以帮助改进我们的产品和服务。阅读我们的[隐私声明](https://go.microsoft.com/fwlink/?LinkID=528096&clcid=0x409)了解更多信息。
+
 If you don't wish to send crash data to Microsoft, you can set the `telemetry.enableCrashReporter` setting to `false`.
+
+如果不希望将崩溃数据发送到 Microsoft，可以将 `telemetry.enableCrashReporter` 设置为 `false`。
 
 From **File** > **Preferences** > **Settings** (macOS: **Code** > **Preferences** > **Settings**), search for `telemetry.enableCrashReporter` and uncheck the setting.
 
+从 **File** > **Preferences** > **Settings** (macOS: **Code** > **Preferences** > **Settings**),搜索 `telemetry.enableCrashReporter`  并取消选中该设置。
+
 If you use the JSON editor for your settings, add the following line:
+
+如果使用 JSON 编辑器进行设置，请添加以下行：
 
 ```json
     "telemetry.enableCrashReporter": false
@@ -247,44 +255,76 @@ If you use the JSON editor for your settings, add the following line:
 
 > **Important Notice**: This option requires a restart of VS Code to take effect.
 
-## Managing online services
+> **重要提示**: 此选项需要重新启动 VS Code 才能生效。
+
+## Managing online services (管理在线服务)
 
 Beyond crash reporting and telemetry, VS Code uses online services for various other purposes such as downloading product updates, finding, installing and updating extensions, or providing Natural Language Search within Settings. You can choose to turn on/off features that use these services.
 
+除了故障报告和遥测之外，VS Code 还将在线服务用于各种其他用途，例如下载产品更新、查找、安装和更新扩展，或在设置中提供自然语言搜索。你可以选择打开/关闭使用这些服务的功能。
+
 Please note, that turning off these features does not put VS Code into offline mode. If, for example, you search for extensions in the **Extensions** view, VS Code still searches the online VS Code Marketplace. The settings ensure that VS Code does not talk to online services without you requesting it.
+
+请注意，关闭这些功能不会使 VS Code 进入脱机模式。例如，如果你在**扩展**视图中搜索扩展，那么 VS Code 仍然会搜索在线 VS Code Marketplace。这些设置确保在没有你请求的情况下， VS Code 不会与联机服务通信。
 
 From **File** > **Preferences** > **Settings** (macOS: **Code** > **Preferences** > **Settings**), and search for `@tag:usesOnlineServices`. This will display all settings that control the usage of online services and you can individually switch them on or off.
 
+从 **File** > **Preferences** > **Settings** (macOS: **Code** > **Preferences** > **Settings**) 查找 `@tag:usesOnlineServices`。这将显示控制联机服务使用的所有设置，你可以单独打开或关闭这些设置。
+
 > **Important Notice**: VS Code gives you the option to install Microsoft and third party extensions. These extensions may also use online services and may not provide settings to configure the usage of these online services, or they may not register their settings to show up when searching for `@tag:usesOnlineServices`. Consult the specific extension's documentation to learn about its usage of online services.
 
-## What non-Microsoft online services does VS Code talk to
+> **重要提示**:  VS Code 为你提供了安装 Microsoft 和第三方扩展的选项。这些扩展还可能使用联机服务，并且可能不提供配置这些联机服务使用的设置，或者在搜索 `@tag:usesOnlineServices` 时，它们可能不注册要显示的设置。请参阅特定扩展的文档以了解其联机服务的使用情况。
+
+## What non-Microsoft online services does VS Code talk to (VS Code 对非微软在线服务说了什么)
 
 The built-in **npm support for VS Code** extension sends requests to `https://registry.npmjs.org` and `https://registry.bower.io`.
 
+内置的 **npm 对 VS Code 支持**的扩展将请求发送到 `https://registry.npmjs.org` 和 `https://registry.bower.io`。
+
 The built-in **TypeScript and JavaScript Language Features** extension queries the `@types` domain at `https://registry.npmjs.org`.
+
+内置的 **TypeScript 和 JavaScript 语言特征**的扩展在 `https://registry.npmjs.org` 上查询 `@types` 域。
 
 When you use **Developer: Toggle Developer Tools** or **Developer: Open Webview Developer Tools**, VS Code may talk to Google servers to fetch data needed to launch Developer Tools.
 
-## Do you send all my information to a recommendation service?
+使用 **Developer: Toggle Developer Tools** 或者 **Developer: Open Webview Developer Tools** 时，VS Code 可能会与 Google 服务器进行对话，以获取启动 Developer Tools 所需的数据。
+
+## Do you send all my information to a recommendation service? (你会把我所有的信息都寄到推荐服务机构吗?)
 
 VS Code provides extension recommendations based on your file types, your workspace, and your environment. File type recommendations are either precomputed or dynamic. Workspace and environment recommendations are always precomputed.
 
+VS Code 根据文件类型、工作区和环境提供扩展建议。文件类型建议要么是预计算的，要么是动态的。工作区和环境建议总是预先计算的。
+
 If you want to know why an extension is being recommended, open the extension's detail page. You can find the recommendation reason in the page header.
 
-### Dynamic recommendations
+如果你想知道推荐扩展名的原因，请打开扩展名的详细信息页。你可以在页面标题中找到推荐原因。
+
+### Dynamic recommendations (动态建议)
 
 When you open a file type for which VS Code does not have any precomputed recommendation, it asks the extension Marketplace for extensions that declare that they support this file type. If the query returns extensions you don't have installed, VS Code tells you about it.
 
-### Precomputed recommendations
+当你打开一个 VS Code 没有任何预计算建议的文件类型时，它会向扩展市场询问声明支持此文件类型的扩展名。如果查询返回未安装的扩展名，那么 VS Code 会告诉你有关扩展名的信息。
+
+### Precomputed recommendations (预先计算的建议)
 
 VS Code collects telemetry about which extensions are being activated for what file types and what workspaces/folders. We identify folders by computing a hash of each of the folder's Git remotes.
 
+VS Code 会收集遥测信息，以确定哪些扩展正在为哪些文件类型和哪些工作区/文件夹激活。我们通过计算每个文件夹的 Git 远程的散列来识别文件夹。
+
 We use this information to precompute anonymous recommendations. Precomputed recommendations are instructions that spell out under which conditions an extension should be recommended. For example, when we see an interesting co-relation between two extensions A and B, one instruction might be: Recommend extension B if the user has installed extension A but not B.
+
+我们使用此信息预计算匿名建议。预先计算的建议是说明在何种条件下应建议扩展的指令。例如，当我们看到两个扩展 A 和 B 之间有一个有趣的共同关系时，一条指令可能是：如果用户安装了扩展 A 而不是 B，那么建议使用扩展 B。
 
 Some precomputed recommendations are shipped as part of the product while additional precomputed recommendations are fetched at runtime from an online Microsoft service. VS Code independently evaluates and executes precomputed recommendations without sending any user information to any online service.
 
-## Technical Support
+一些预计算的建议作为产品的一部分提供，而其他预计算的建议则在运行时从联机 Microsoft 服务中获取。VS Code 独立地评估和执行预先计算的建议，而不向任何在线服务发送任何用户信息。
+
+## Technical Support (技术支持)
 
 You can ask questions and search for answers on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) and enter issues and feature requests directly in our [GitHub repository](https://github.com/Microsoft/vscode/blob/master/CONTRIBUTING.md).
 
+你可以在[堆栈溢出](https://stackoverflow.com/questions/tagged/vscode)时提出问题并搜索答案，并直接在 [Github](https://github.com/Microsoft/vscode/blob/master/CONTRIBUTING.md) 存储库中输入问题和特性请求。
+
 If you'd like to contact a professional support engineer, you can open a ticket with the [Microsoft assisted support team](https://support.microsoft.com/assistedsupportproducts).
+
+如果你要联系专业支持工程师，可以与 [Microsoft 辅助支持团队](https://support.microsoft.com/assistedsupportproducts)一起开罚单。
