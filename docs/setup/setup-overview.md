@@ -42,7 +42,7 @@ VS Code [每月](/updates)发布一个新版本，其中包含新特性和重要
 
 >Note: 如果你希望按自己的计划更新 VS Code，可以[禁用自动更新](/docs/supporting/faq.md#how-do-i-opt-out-of-vs-code-autoupdates)。
 
-## Insiders nightly build (工作人员夜间编译)
+## Insiders nightly build (内部 nightly 版本)
 
 If you'd like to try our nightly builds to see new features early or verify bug fixes, you can install our [Insiders build](/insiders). The Insiders build installs side-by-side with the monthly Stable build and you can freely work with either on the same machine. The Insiders build is the same one the VS Code development team uses on a daily basis and we really appreciate people trying out new features and providing feedback.
 
