@@ -11,7 +11,7 @@ MetaDescription: Setup VS Code's Network Connection.
 
 Visual Studio Code is built on top of [Electron](https://electron.atom.io/) and benefits from all the networking stack capabilities of [Chromium](https://www.chromium.org/). This also means that VS Code users get much of the networking support available in [Google Chrome](https://www.google.com/chrome/index.html).
 
-Visual Studio Code 构建在[电子](https://electron.atom.io/)之上，并且得益于 [Chromium](https://www.chromium.org/) 的所有网络堆栈功能。
+Visual Studio Code 构建在 [Electron](https://electron.atom.io/) 之上，并且得益于 [Chromium](https://www.chromium.org/) 的所有网络堆栈功能。
 
 ## Common hostnames (公用主机名)
 
