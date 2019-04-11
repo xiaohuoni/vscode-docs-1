@@ -52,7 +52,7 @@ If you'd like to try our nightly builds to see new features early or verify bug 
 
 VS Code is an editor, first and foremost, and prides itself on a small footprint. Unlike traditional IDEs which tend to include everything but the kitchen sink, you can tune your installation to the development technologies you care about. Be sure to read the [Additional Components](/docs/setup/additional-components.md) topic after reading the platform guides to learn about customizing your VS Code installation.
 
-首要的是，VS Code 是一个编辑器并且以占用小空间为傲。与传统的 IDE 不同，它往往包括除厨房水槽之外的所有内容，你可以根据你关心的开发技术调整你的安装。阅读完平台指南后，请务必阅读[附加组件](/docs/setup/additional-components.md)主题，以了解如何自定义 VS Code 安装。
+VS Code 首先是一个编辑器并且以占用较小资源为傲。与传统的 IDE 往往包含过多东西不同，你可以根据你关心的开发技术调整你的安装。阅读完平台指南后，请务必阅读[附加组件](/docs/setup/additional-components.md)主题，以了解如何自定义 VS Code 安装。
 
 ## Extensions (扩展)
 
