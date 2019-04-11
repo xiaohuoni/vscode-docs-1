@@ -73,7 +73,7 @@ Extensions integrate into VS Code's UI, commands, and task running systems so yo
 
 Once you have installed and set up VS Code, these topics will help you learn more about VS Code:
 
-安装并设置 VS Code 后，这些主题将帮助你了解有关  VS Code 的更多信息：
+一旦安装并设置 VS Code 后，以下主题将帮助你了解有关  VS Code 的更多信息：
 
 * [Additional Components](/docs/setup/additional-components.md) - Learn how to install Git, Node.js, TypeScript and tools like Yeoman.
 * [User Interface](/docs/getstarted/userinterface.md) - A quick orientation to VS Code.
