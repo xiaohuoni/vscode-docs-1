@@ -30,7 +30,7 @@ Follow the platform specific guides below:
 
 VS Code is lightweight and should run on most available hardware and platform versions. You can review the [System Requirements](/docs/supporting/requirements.md) to check if your computer configuration is supported.
 
-VS Code 是轻量级的，应该在大多数可用的硬件和平台版本上运行。你可以查看系统要求以检查你的计算机配置是否受支持。
+VS Code 是轻量级的，可以在大多数现有的硬件和平台版本上运行。你可以查看[系统要求](/docs/supporting/requirements.md)以检查你的计算机配置是否受支持。
 
 ## Update cadence (更新节奏)
 
