@@ -21,7 +21,7 @@ VS Code 中的一些特性需要网络通信才能工作，例如自动更新机
 
 If you are behind a firewall which needs to whitelist domains used by VS Code, here's the list of hostnames you should allow communication to go through:
 
-如果你在防火墙后面，需要白名单域由 VS Code 使用，下面是你应该允许通信通过的主机名列表：
+如果防火墙需要将 VS Code 添加到白名单才能使用的话，这里有一些允许通信通过的主机名列表：
 
 * `update.code.visualstudio.com`
 * `code.visualstudio.com`
@@ -51,7 +51,7 @@ VS Code 与 Google Chromium 具有完全相同的代理服务器支持。下面�
 
 This means that your proxy settings should be picked up automatically.
 
-这意味着你的代理设置应该自动获取。
+这意味着你能够自动获取你的代理设置。
 
 Otherwise, you can use the following command line arguments to control your proxy settings:
 
@@ -79,7 +79,7 @@ Otherwise, you can use the following command line arguments to control your prox
 
 Authenticated proxies should work seamlessly within VS Code with the addition of [PR #22369](https://github.com/Microsoft/vscode/pull/22369).
 
-经过身份验证的代理应该在VS代码中无缝工作，并添加 [PR #22369](https://github.com/Microsoft/vscode/pull/22369)。
+经过身份验证的代理可以在 VS Code 中无缝工作，并添加 [PR #22369](https://github.com/Microsoft/vscode/pull/22369)。
 
 The authentication methods supported are:
 
@@ -108,7 +108,7 @@ Note that SOCKS5 proxy authentication support isn't implemented yet; you can fol
 
 Often HTTPS proxies rewrite SSL certificates of the incoming requests. Chromium was designed to reject responses which are signed by certificates which it doesn't trust. If you hit any SSL trust issues, there are a few options available for you:
 
-通常，HTTPS 代理重写传入请求的 SSL 证书。Chromium 被设计为拒绝由其不信任的证书签署的响应。如果遇到任何 SSL 信任问题，你可以使用以下几个选项：
+通常，HTTPS 代理重写传入请求的 SSL 证书。Chromium 被设计为拒绝签署不信任的证书的响应。如果遇到任何 SSL 信任问题，你可以使用以下几个选项：
 
 * Since Chromium simply uses the OS's certificate trust infrastructure, the preferred option is to add your proxy's certificate to your OS's trust chain. [Click here](https://www.chromium.org/Home/chromium-security/root-ca-policy) to read more about the Root Certificate Policy in Chromium.
 * If your proxy runs in `localhost`, you can always try the [`--allow-insecure-localhost`](https://peter.sh/experiments/chromium-command-line-switches/#allow-insecure-localhost) command line flag.
@@ -126,7 +126,7 @@ Extensions don't benefit yet from the same proxy support that VS Code supports. 
 
 Similarly to extensions, a few other VS Code features don't yet fully support proxy networking, namely the CLI interface. The CLI interface is what you get when running `code --install-extension vscodevim.vim` from a command prompt or terminal. You can follow this issue's development in [GitHub](https://github.com/Microsoft/vscode/issues/29910).
 
-与扩展类似，其他一些 VS Code 特性还不完全支持代理网络，即 CLI 接口。当从命令提示符或终端运行 `code --install-extension vscodevim.vim` 时，CLI 接口就是你得到的。你可以在 [Github](https://github.com/Microsoft/vscode/issues/29910) 中跟踪此问题的发展。
+与扩展类似，其他一些 VS Code 特性还不完全支持代理网络，即 CLI 接口。当从命令提示符或终端运行 `code --install-extension vscodevim.vim` 时，你就能得到 CLI 接口。你可以在 [Github](https://github.com/Microsoft/vscode/issues/29910) 中跟踪此问题的发展。
 
 Due to both of these constraints, the `http.proxy`, `http.proxyStrictSSL` and `http.proxyAuthorization` variables are still part of VS Code's settings, yet they are only respected in these two scenarios.
 
