@@ -46,7 +46,7 @@ VS Code [每月](/updates)发布一个新版本，其中包含新特性和重要
 
 If you'd like to try our nightly builds to see new features early or verify bug fixes, you can install our [Insiders build](/insiders). The Insiders build installs side-by-side with the monthly Stable build and you can freely work with either on the same machine. The Insiders build is the same one the VS Code development team uses on a daily basis and we really appreciate people trying out new features and providing feedback.
 
-如果你想尝试我们的夜间编译以尽早查看新功能或验证错误修复，你可以安装我们的 [Insiders build](/insiders)。工作人员编译每月安定的安装，你可以在同一台机器上自由工作。工作人员的编译与 VS Code 开发团队每天使用的编译是相同的，我们非常感谢人们尝试新功能并提供反馈。
+如果你想尝试我们的 nightly 版本以尽早查看新功能或验证错误修复，你可以安装我们的 [Insiders build](/insiders)。内部版本和每月的稳定版本可以同时安装，所以你可以在同一台机器上自由选择使用。内部版本与 VS Code 开发团队每天使用的版本是相同的，我们非常感谢人们尝试新功能并提供反馈。
 
 ## Additional components (附加组件)
 
