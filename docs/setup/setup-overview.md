@@ -12,7 +12,7 @@ MetaSocialImage: quicksetup_QuickSetup.png
 
 Getting up and running with Visual Studio Code is quick and easy. It is a small download so you can install in a matter of minutes and give VS Code a try.
 
-使用 Visual Studio Code 启动和运行既快捷又简单。这是一个小下载，所以你可以在几分钟内安装，并给 VS Code 一个尝试。
+Visual Studio Code 的配置和运行非常简单。只需几分钟你就可以下载安装并开始尝试 VS Code。
 
 ## Cross platform (跨平台)
 
