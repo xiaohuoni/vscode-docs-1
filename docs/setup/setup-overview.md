@@ -58,7 +58,7 @@ VS Code 首先是一个编辑器并且以占用较小资源为傲。与传统的
 
 VS Code [extensions](/docs/editor/extension-gallery.md) let third parties add support for additional:
 
-VS Code [扩展](/docs/editor/extension-gallery.md)允许第三方添加对附加的支持：
+VS Code [扩展](/docs/editor/extension-gallery.md)允许第三方添加额外的支持：
 
 * Languages - [C++](/docs/languages/cpp.md), [C#](/docs/languages/csharp.md), [Go](/docs/languages/go.md), [Java](/docs/languages/java.md), [Python](/docs/languages/python.md)
 * Tools - [ESLint](https://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint), [JSHint](https://marketplace.visualstudio.com/items/dbaeumer.jshint) , [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
