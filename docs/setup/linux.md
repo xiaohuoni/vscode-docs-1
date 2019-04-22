@@ -7,13 +7,15 @@ PageTitle: Running Visual Studio Code on Linux
 DateApproved: 3/7/2019
 MetaDescription: Get Visual Studio Code up and running on Linux.
 ---
-# Visual Studio Code on Linux
+# Visual Studio Code on Linux 
 
-## Installation
+## Installation (安装)
 
-### Debian and Ubuntu based distributions
+### Debian and Ubuntu based distributions (基于 Debian 和 Ubuntu 的发行版)
 
 The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to download and install the [.deb package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760868), either through the graphical software center if it's available, or through the command line with:
+
+为基于 Debian/Ubuntu 的发行版安装 Visual Studio Code 的最简单方法是通过图形软件中心或通过命令行下载并安装[.deb包(64位)](https://go.microsoft.com/fwlink/?LinkID=760868)：
 
 ```bash
 sudo apt install ./<file>.deb
@@ -25,7 +27,11 @@ sudo apt install ./<file>.deb
 
 Installing the .deb package will automatically install the apt repository and signing key to enable auto-updating using the system's package manager. Note that 32-bit and .tar.gz binaries are also available on the [download page](/Download).
 
+安装 .deb 包将自动安装 apt 仓库，并签字，以便利用系统的软件包经理实现自我更新。请注意，32位和 .tar.gz 二进制文件也可以在[下载页面](/Download)上找到。
+
 The repository and key can also be installed manually with the following script:
+
+还可以使用以下脚本手动安装存储库和密钥：
 
 ```bash
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -35,15 +41,19 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 
 Then update the package cache and install the package using:
 
+然后更新包缓存并使用以下方法安装包：
+
 ```bash
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install code # or code-insiders
 ```
 
-### RHEL, Fedora and CentOS based distributions
+### RHEL, Fedora and CentOS based distributions (基于 RHEL、Fedora 和 Centos 的发行版)
 
 We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
+
+我们目前在 yum 存储库中提供稳定的64位 VS Code，下面的脚本将安装密钥和存储库：
 
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -52,12 +62,16 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 Then update the package cache and install the package using `dnf` (Fedora 22 and above):
 
+然后更新包缓存并使用 `dnf` (Fedora 22及更高版本)安装包：
+
 ```bash
 dnf check-update
 sudo dnf install code
 ```
 
 Or on older versions using `yum`:
+
+或者在旧版本上使用 `yum`：
 
 ```bash
 yum check-update
@@ -66,9 +80,13 @@ sudo yum install code
 
 Note that due to the manual signing process and the system we use to publish, the yum repo may lag behind and not get the latest version of VS Code immediately.
 
-### openSUSE and SLE based distributions
+请注意，由于手动签名过程和我们用于发布的系统，yum repo 可能会落后，无法立即获得最新版本的 VS Code。
+
+### openSUSE and SLE based distributions (基于 OpenSUSE 和 SLE 的发行版)
 
 The yum repository above also works for openSUSE and SLE based systems, the following script will install the key and repository:
+
+上面的 yum 存储库也适用于基于 openSUSE 和 SLE 的系统，下面的脚本将安装密钥和存储库：
 
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -77,30 +95,39 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 Then update the package cache and install the package using:
 
+然后更新包缓存并使用以下方法安装包：
+
 ```bash
 sudo zypper refresh
 sudo zypper install code
 ```
 
-### AUR package for Arch Linux
+### AUR package for Arch Linux (用于 Arch Linux 的 AUR 包)
 
 There is a community maintained Arch User Repository (AUR) [package for VS Code](https://aur.archlinux.org/packages/visual-studio-code-bin).
+
+有一个社区维护的 Arch 用户存储库 (AUR) [包作用于VS Code](https://aur.archlinux.org/packages/visual-studio-code-bin)。
 
 To get more information about the installation from the AUR, please consult the following wiki entry:
 [Install AUR Packages](https://wiki.archlinux.org/index.php/Arch_User_Repository#Build_and_install_the_package).
 
+要从 AUR 获取有关安装的更多信息，请参考以下 wiki 条目：[Install AUR Packages](https://wiki.archlinux.org/index.php/Arch_User_Repository#Build_and_install_the_package)。
 
-### Nix package for NixOS (or any Linux distribution using Nix package manager)
+### Nix package for NixOS (or any Linux distribution using Nix package manager) (NixOS 下的 Nix 包(或任何 Linux 发行版的包管理器使用 Nix))
 
 There is a community maintained [Nix package](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/vscode/default.nix) in the nixpkgs repository. In order to install it using Nix, set `allowUnfree` option to true in your `config.nix` and execute:
+
+在 nixpkgs 存储库中有一个社区维护的 [Nix 包](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/vscode/default.nix)。要安装使用它，请在 `config.nix` 中将 `allowUnfree` 选项设置为 true，然后执行：
 
 ```bash
 nix-env -i vscode
 ```
 
-### Installing .rpm package manually
+### Installing .rpm package manually (手动安装 .rpm 包)
 
 The [.rpm package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760867) can also be manually downloaded and installed, however auto-updating won't work unless the repository above is installed. Once downloaded it can be installed using your package manager, for example with `dnf`:
+
+[.rpm 包(64位)](https://go.microsoft.com/fwlink/?LinkID=760867)也可以手动下载和安装，但是除非安装了上述存储库，否则自动更新将无法工作。下载后，可以使用包管理器安装它，例如使用 `dnf`：
 
 ```bash
 sudo dnf install <file>.rpm
@@ -108,13 +135,19 @@ sudo dnf install <file>.rpm
 
 Note that 32-bit and .tar.gz binaries are also available on the [download page](/Download).
 
-## Updates
+请注意，32位和 .tar.gz 二进制文件也可以在[下载页面](/Download)上找到。
+
+## Updates (更新)
 
 VS Code ships monthly and you can see when a new release is available by checking [Updates](/updates). If the VS Code repository was installed correctly, then your system package manager should handle auto-updating in the same way as other packages on the system.
+
+VS Code 每月发布一次，你可以通过检查更新来查看新版本何时可用。如果 VS Code 存储库安装正确，那么系统包管理器应该与系统上其他包相同的方式处理自动更新。
 
 ## Node.js
 
 Node.js is a popular platform and runtime for easily building and running JavaScript applications. It also includes [npm](https://www.npmjs.com/), a Package Manager for Node.js modules. You'll see Node.js and npm mentioned frequently in our documentation and some optional VS Code tooling requires Node.js (for example, the VS Code [extension generator](/api/get-started/your-first-extension.md)).
+
+Node.js 是一个流行的平台和流程，用于轻松构建和运行 JavaScript 应用程序。它还包括 [npm](https://www.npmjs.com/)，Node.js 模块的包管理器。你将在我们的文档中经常看到 Node.js 和 npm，一些可选的 VS Code 工具需要 Node.js (例如，VS Code [扩展生成器](/api/get-started/your-first-extension.md))。
 
 If you'd like to install Node.js on Linux, see [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager) to find the Node.js package and installation instructions tailored to your Linux distribution. You can also install and support multi version of Node.js by using the [Node Version Manager](https://github.com/creationix/nvm).
 
