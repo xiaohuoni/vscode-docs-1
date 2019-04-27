@@ -173,7 +173,7 @@ xdg-mime default code.desktop text/plain
 
 Debian-based distributions allow setting a default *editor* using the [alternatives system](https://wiki.debian.org/DebianAlternatives), without concern for the MIME type. You can set this by running the following and selecting code:
 
-Debian-based 的发行版允许使用[备选系统](https://wiki.debian.org/DebianAlternatives)设置默认*编辑器*，而不需要考虑 MIME 类型。您可以通过运行以下命令并选择代码来设置：
+Debian-based 的发行版允许使用[备选系统](https://wiki.debian.org/DebianAlternatives)设置默认*编辑器*，而不需要考虑 MIME 类型。你可以通过运行以下命令并选择代码来设置：
 
 ```bash
 sudo update-alternatives --set editor /usr/bin/code
@@ -183,7 +183,7 @@ sudo update-alternatives --set editor /usr/bin/code
 
 Once you have installed VS Code, these topics will help you learn more about it:
 
-一旦安装了 VS Code，这些主题将帮助您了解有关它的更多信息：
+一旦安装了 VS Code，这些主题将帮助你了解有关它的更多信息：
 
 * [Additional Components](/docs/setup/additional-components.md) - Learn how to install Git, Node.js, TypeScript and tools like Yeoman.
 * [User Interface](/docs/getstarted/userinterface.md) - A quick orientation to VS Code.
@@ -324,15 +324,23 @@ If you are using X forwarding to use VS Code remotely, you will need to use the 
 
 The custom title bar and menus were enabled by default on Linux for several months. The custom title bar has been a success on Windows, but the customer response on Linux suggests otherwise. Based on feedback, we have decided to make this setting opt-in on Linux and leave the native title bar as the default.
 
+自定义标题栏和菜单在 Linux 上默认启用了几个月。定制的标题栏在 Windows 上已经取得了成功，但是 Linux 上的客户响应却显示出了不同的效果。根据反馈，我们决定在 Linux 上选择此设置，并将舍弃本机标题栏的默认值。
+
 The custom title bar provides many benefits including great theming support and better accessibility through keyboard navigation and screen readers. Unfortunately, these benefits do not translate as well to the Linux platform. Linux has a variety of desktop environments and window managers that can make the VS Code theming look foreign to users. For users needing the accessibility improvements, we recommend enabling the custom title bar when running in accessibility mode using a screen reader. You can still manually set the title bar with the **Window: Title Bar Style** (`window.titleBarStyle`) setting.
 
-### Broken cursor in editor with display scaling enabled
+自定义标题栏提供了许多好处，包括强大的主题支持、通过键盘导航和屏幕阅读器的更好的可访问性。不幸的是，这些好处并没有转化为 Linux 平台。Linux 有各种各样的桌面环境和窗口管理器，使得  VS Code 主题化对用户来说看起来是陌生的。对于需要提高辅助功能的用户，建议在使用屏幕阅读器以辅助功能模式运行时启用自定义标题栏。你仍然可以使用**Window: Title Bar Style**（`window.title bar style`）设置手动设置标题栏。
+
+### Broken cursor in editor with display scaling enabled (启用显示缩放的编辑器中断开光标)
 
 Due to an upstream [issue](https://github.com/electron/electron/issues/14787) with Electron, the mouse cursor may render incorrectly with scaling enabled. If you notice that the usual text cursor is not being rendered inside the editor as you would expect, try falling back to the native menu bar by configuring the setting `window.titleBarStyle` to `native`.
 
-### Repository changed its origin value
+由于电子的上游[问题](https://github.com/electron/electron/issues/14787)，启用缩放后，鼠标光标可能呈现不正确。如果你注意到通常的文本光标没有像预期的那样呈现在编辑器中，请尝试通过将 `window.titleBarStyle` 设置为 `native` 返回到本机菜单栏。
+
+### Repository changed its origin value (存储库更改了其原始值)
 
 If you receive an error similar to the following:
+
+如果收到类似以下错误：
 
 ```
 E: Repository '...' changed its 'Origin' value from '...' to '...'
@@ -340,6 +348,8 @@ N: This must be accepted explicitly before updates for this repository can be ap
 ```
 
 Use `apt` instead of `apt-get` and you will be prompted to accept the origin change:
+
+使用 `apt` 而不是 `apt-get`，系统将提示你接受源站更改：
 
 ```bash
 sudo apt update
